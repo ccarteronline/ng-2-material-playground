@@ -1,0 +1,38 @@
+<div class="crudObject">
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+            <div class="collapsible-header" (click)="getFromApi($event)">
+                <i class="material-icons">dns</i>
+                GET
+            </div>
+            <div class="collapsible-body white">
+                <p *ngIf="!GETerrorMessage">
+                    {{testId}}
+                    <br>
+                    {{testName}}
+                    <br>
+                    {{testItem}}
+                </p>
+                <p *ngIf="GETerrorMessage">
+                    {{GETerrorMessage}}
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header" (click)="sendToApi($event)">
+                <i class="material-icons">dns</i>
+                POST
+            </div>
+            <div class="collapsible-body white">
+                <p *ngIf="!POSTerrorMessage">
+                    {{postName}}
+                    <br>
+                    {{postMessage}}
+                </p>
+                <p *ngIf="POSTerrorMessage">
+                    {{POSTerrorMessage}}
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
