@@ -1,10 +1,10 @@
-import { TestMaterialPage } from './app.po';
+import { Material2Page } from './app.po';
 
-describe('test-material App', function() {
-  let page: TestMaterialPage;
+describe('material2 App', function() {
+  let page: Material2Page;
 
   beforeEach(() => {
-    page = new TestMaterialPage();
+    page = new Material2Page();
   });
 
   it('should display message saying app works', () => {
